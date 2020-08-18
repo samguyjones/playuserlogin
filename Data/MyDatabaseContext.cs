@@ -13,7 +13,6 @@ namespace DotNetCoreSqlDb.Models
         {
         }
 
-        public DbSet<DotNetCoreSqlDb.Models.Todo> Todo { get; set; }
         public DbSet<DotNetCoreSqlDb.Models.Member> Member { get; set; }
         public DbSet<DotNetCoreSqlDb.Models.MemberToken> MemberToken { get; set; }
     }

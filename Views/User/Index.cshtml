@@ -1,8 +1,42 @@
 ﻿@{
     ViewData["Title"] = "User Management";
 }
+<script src="~/js/userman.js"></script>
+<h3>Create User</h3>
+<dl>
+    <form id="create">
+        <dt>Email</dt>
+        <dd><input type="text" name="email"/></dd>
+        <dt>Password</dt>
+        <dd><input type="password" name="password"/></dd>
+        <dt>First Name</dt>
+        <dd><input type="text" name="firstName"/></dd>
+        <dt>Last Name</dt>
+        <dd><input type="text" name="lastName"/></dd>
+        <input type="submit" value="create"></input>
+        <div id="create-status" class="error"></div>
+    </form>
+</dl>
 
-<div class="text-center">
-    <h1 class="display-4">User Management</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h3>Forgot Password</h3>
+<dl>
+    <form id="forgot">
+        <dt>Email</dt>
+        <dd><input type="text" name="email"/></dd>
+        <div id="forgot-status" class="error"></div>
+        <input type="submit" value="send reset email"></input>
+        <div id="forgot-status" class="error"></div>
+    </form>
+</dl>
+
+<h3>Login</h3>
+<dl>
+    <form id="login">
+        <dt>Email</dt>
+        <dd><input type="text" name="email"/></dd>
+        <dt>Password</dt>
+        <dd><input type="password" name="password"/></dd>
+        <div id="login-status" class="error"></div>
+        <input type="submit" value="login"></input>
+    </form>
+</dl>
